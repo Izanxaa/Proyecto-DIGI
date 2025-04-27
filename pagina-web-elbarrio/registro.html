@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - MicroInformática El Barrio</title>
+  <link rel="stylesheet" href="sesiones.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Crear Cuenta</h2>
+    <form action="registro.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button onclick="window.location.href='iniciosesion.html'">Registrarse</button>
+    </form>
+    <p class="mensaje-secundario">
+      ¿Ya tienes una cuenta? <a href="iniciosesion.html">Inicia sesión</a>
+    </p>
+  </div>
+</body>
+</html>
