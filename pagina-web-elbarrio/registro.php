@@ -1,7 +1,7 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "empresa_chatbot");
+ $conexion = new mysqli("localhost", "root", "", "empresa_chatbot");
 
-$nombre = $_POST['nombre'];
+ $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $contraseña = password_hash($_POST['contraseña'], PASSWORD_DEFAULT);
 
@@ -12,4 +12,4 @@ if ($conexion->query($sql)) {
 } else {
     echo "Error: " . $conexion->error;
 }
-?>
+?> 
